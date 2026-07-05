@@ -80,14 +80,6 @@ ONLINE-QUIZ-APPLICATION/
 - 🗄 SQLite Database
 
 ---
-
-# 💫 Project Workflow
-
-## User Registration
-
-Users can create an account using the registration page.
-
----
 ## 📽️ Demo Video
 
 Because of GitHub’s file size limitations, you can watch the full working demo of EduTutor AI here:
@@ -96,6 +88,15 @@ Because of GitHub’s file size limitations, you can watch the full working demo
 
 
 ----------------------
+
+
+# 💫 Project Workflow
+
+## User Registration
+
+Users can create an account using the registration page.
+
+---
 
 ## User Login
 
