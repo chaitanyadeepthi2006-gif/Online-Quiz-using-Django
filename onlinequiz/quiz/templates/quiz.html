@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% block title %}
+Quiz
+{% endblock %}
+{% block content %}
+<div class="container">
+    <h2>Online Quiz</h2>
+    <!-- Timer -->
+    <div id="timer">
+        Time Left: <span id="time">600</span> Seconds
+    </div>
+    <form method="POST" id="quizForm">
+        {% csrf_token %}
+        {% for question in questions %}
+        <div class="question-box">
+            <h3>{{ forloop.counter }}. {{ question.question }}</h3>
+            <label>
+                <input type="radio"
+                       name="{{ question.id }}"
+                       value="{{ question.option1 }}"
+                       required>
+                {{ question.option1 }}
+            </label>
+            <br><br>
+             <label>
+                <input type="radio"
+                       name="{{ question.id }}"
+                       value="{{ question.option2 }}">
+                {{ question.option2 }}
+            </label>
+            <br><br>
+            <label>
+                <input type="radio"
+                       name="{{ question.id }}"
+                       value="{{ question.option3 }}">
+                {{ question.option3 }}
+            </label>
+            <br><br>
+            <label>
+                <input type="radio"
+                       name="{{ question.id }}"
+                       value="{{ question.option4 }}">
+                {{ question.option4 }}
+            </label>
+        </div>
+    <hr>
+    {% empty %}
+        <h3>No Questions Available</h3>
+        {% endfor %}
+        <center>
+            <button type="submit" onclick="confirmSubmit()">
+                Submit Quiz
+            </button>
+        </center>
+    </form>
+</div>
+<script>
+let timeLeft = 600;
+let timer = setInterval(function(){
+    document.getElementById("time").innerHTML = timeLeft;
+    timeLeft--;
+    if(timeLeft < 0){
+        clearInterval(timer);
+        alert("Time is Over!");
+        document.getElementById("quizForm").submit();
+    }
+},1000);
+</script>
+{% endblock %}
+
+    
+    

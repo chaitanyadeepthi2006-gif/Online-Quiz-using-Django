@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block title %}
+Result
+{% endblock %}
+{% block content %}
+<div class="container">
+    <h2>Quiz Result</h2>
+    <h3>Score : {{ score }}/{{ total }}</h3>
+    <hr>
+    {% if wrong_answers %}
+        <h3>Wrong Answers</h3>
+        {% for item in wrong_answers %}
+            <p><strong>Question:</strong> {{ item.question }}</p>
+            <p style="color:red;">
+                <strong>Your Answer:</strong> {{ item.selected }}
+            </p>
+            <p style="color:green;">
+                <strong>Correct Answer:</strong> {{ item.correct }}
+            </p>
+            <hr>
+        {% endfor %}
+    {% else %}
+        <h2 style="color:green;">🎉 Congratulations!</h2>
+        <h3>All Answers are Correct.</h3>
+    {% endif %}
+    <a href="/quiz/">
+        <button>Take Quiz Again</button>
+    </a>
+</div>
+{% endblock %}

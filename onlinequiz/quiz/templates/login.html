@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}
+Login
+{% endblock %}
+{% block content %}
+<div class="container">
+<h2>User Login</h2>
+{% if error %}
+<p style="color:red;">{{ error }}</p>
+{% endif %}
+<form method="POST">
+    {% csrf_token %}
+    {{ form.username.label }}
+    {{ form.username }}
+    <br><br>
+    {{ form.password.label }}
+    {{ form.password }}
+    <br><br>
+    <button type="submit">
+        Login
+    </button>
+</form>
+<br>
+<a href="/register/">
+    Don't have an account? Register
+</a>
+</div>
+{% endblock %}
