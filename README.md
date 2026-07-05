@@ -80,15 +80,6 @@ ONLINE-QUIZ-APPLICATION/
 - 🗄 SQLite Database
 
 ---
-## 📽️ Demo Video
-
-Because of GitHub’s file size limitations, you can watch the full working demo of EduTutor AI here:
-
-▶️ [Click to Watch the Demo on Google Drive](https://drive.google.com/file/d/1u5jTtzwd-0QCXPrCKPF8DLxT_IJOgQCI/view?usp=sharing)
-
-
-----------------------
-
 
 # 💫 Project Workflow
 
@@ -238,16 +229,14 @@ http://127.0.0.1:8000/admin/
 
 ---
 
-# 📽 Demo Video
+##📽️Demo Video
 
-Because GitHub has upload limitations, the complete demo video is available here.
+Because of GitHub’s file size limitations, you can watch the full working demo of EduTutor AI here:
 
-▶️ Click Here to Watch Demo
+▶️ [Click to Watch the Demo on Google Drive](https://drive.google.com/file/d/1u5jTtzwd-0QCXPrCKPF8DLxT_IJOgQCI/view?usp=sharing)
 
-(Add Google Drive Link)
 
----
-
+----------------------
 # 📈 Future Enhancements
 
 - Quiz Categories
@@ -279,7 +268,7 @@ Create a Pull Request
 
 # 📬 Contact
 
-📧 Email: yourname@gmail.com
+📧 Email: chaitanyadeepthi2006@gmail.com
 
 🐞 Issues: Open a GitHub Issue
 
