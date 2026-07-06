@@ -233,7 +233,7 @@ http://127.0.0.1:8000/admin/
 
 Because of GitHub’s file size limitations, you can watch the full working demo of EduTutor AI here:
 
-▶️ [Click to Watch the Demo on Google Drive](https://drive.google.com/file/d/1u5jTtzwd-0QCXPrCKPF8DLxT_IJOgQCI/view?usp=sharing)
+▶️ [Click to Watch the Demo on Google Drive](https://drive.google.com/file/d/1XbGMvsCfUxOIOEBoTl43q4bZfb379kBP/view?usp=drivesdk)
 
 
 ----------------------
